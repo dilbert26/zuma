@@ -15,8 +15,14 @@ export async function GET() {
         },
       }
     );
-  } catch {
-    console.error("Error de conexion a PostgreSQL");
+  } catch (error) {
+    const err = error as Error & { code?: string };
+
+    console.error("Error PostgreSQL:", {
+      name: err.name,
+      code: err.code,
+      message: err.message,
+    });
 
     return Response.json(
       {
