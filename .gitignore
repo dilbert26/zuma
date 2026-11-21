@@ -39,3 +39,63 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Variables de entorno con nombres alternativos
+*.env
+*.env.*
+
+# Claves privadas, contenedores con claves y almacenes de contraseñas
+*.key
+*.p12
+*.pfx
+*.p8
+*.pkcs8
+*.ppk
+*.jks
+*.keystore
+*.kdbx
+
+# Configuración privada y claves de SSH
+.ssh/
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+id_ecdsa_sk
+id_ed25519_sk
+
+# Credenciales locales de servicios externos
+.aws/
+.azure/
+**/.config/gcloud/
+application_default_credentials.json
+credentials.json
+credentials.*.json
+service-account.json
+service-account-*.json
+*-service-account.json
+
+# Archivos de autenticación y tokens
+.npmrc
+.netrc
+_netrc
+.git-credentials
+.token
+.token.*
+.tokens
+.tokens.*
+*.token
+*.tokens
+
+# Archivos locales de secretos
+.secrets
+.secrets.*
+.secrets/
+secrets/
+secrets.json
+secrets.yaml
+secrets.yml
+secrets.local
+secrets.local.*
+*.secret
+*.secrets

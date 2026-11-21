@@ -1,0 +1,23 @@
+# Texto con LF en Windows, Linux y Vercel, en concordancia con Prettier.
+* text=auto eol=lf
+
+# SVG es texto; las imágenes rasterizadas y fuentes son binarias.
+*.svg text eol=lf
+*.ico binary -eol
+*.png binary -eol
+*.jpg binary -eol
+*.jpeg binary -eol
+*.gif binary -eol
+*.webp binary -eol
+*.avif binary -eol
+*.woff binary -eol
+*.woff2 binary -eol
+*.ttf binary -eol
+*.otf binary -eol
+*.pdf binary -eol
+*.zip binary -eol
+*.gz binary -eol
+*.wasm binary -eol
+
+# Conservar los bytes del certificado CA público sin conversiones de línea.
+certs/prod-ca-2021.crt -text -eol

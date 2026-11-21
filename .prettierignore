@@ -33,3 +33,44 @@ npm-shrinkwrap.json
 .ssh/
 credentials*
 secrets*
+
+# Formatos adicionales de claves y almacenes privados
+*.p8
+*.pkcs8
+*.ppk
+*.kdbx
+
+# Variables de entorno con nombres alternativos
+*.env
+*.env.*
+
+# Claves de SSH fuera de .ssh
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+id_ecdsa_sk
+id_ed25519_sk
+
+# Credenciales adicionales de servicios externos
+.azure/
+**/.config/gcloud/
+application_default_credentials.json
+service-account.json
+service-account-*.json
+*-service-account.json
+
+# Archivos adicionales de autenticación, tokens y secretos locales
+_netrc
+.git-credentials
+.token
+.token.*
+.tokens
+.tokens.*
+*.token
+*.tokens
+.secrets
+.secrets.*
+.secrets/
+*.secret
+*.secrets
