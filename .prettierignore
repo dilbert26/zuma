@@ -1,0 +1,35 @@
+# Dependencias y archivos generados
+node_modules/
+.next/
+out/
+build/
+dist/
+coverage/
+.vercel/
+next-env.d.ts
+*.tsbuildinfo
+
+# Certificados y claves
+certs/
+*.crt
+*.cer
+*.der
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# Archivos de bloqueo de npm
+package-lock.json
+npm-shrinkwrap.json
+
+# Entorno y credenciales
+.env*
+.npmrc
+.netrc
+.aws/
+.ssh/
+credentials*
+secrets*

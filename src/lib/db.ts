@@ -14,10 +14,7 @@ const globalForPg = globalThis as unknown as {
   pool: Pool | undefined;
 };
 
-const ca = readFileSync(
-  join(process.cwd(), "certs", "prod-ca-2021.crt"),
-  "utf8"
-);
+const ca = readFileSync(join(process.cwd(), "certs", "prod-ca-2021.crt"), "utf8");
 
 export const pool =
   globalForPg.pool ??

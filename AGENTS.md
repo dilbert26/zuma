@@ -17,24 +17,25 @@ Estas reglas se aplican a todo el repositorio. Priorizar la seguridad, la manten
 - Utilizar Next.js con App Router, TypeScript, React, Tailwind CSS y Node.js.
 - Utilizar PostgreSQL como base de datos y Supabase exclusivamente como proveedor de PostgreSQL.
 - Utilizar Git y GitHub para el control de versiones y Vercel como plataforma de despliegue.
+- Utilizar Prettier como herramienta de desarrollo aprobada para el formato de código, junto con `eslint-config-prettier` para su integración con ESLint.
 - Drizzle ORM, Zod y las herramientas de pruebas automatizadas son tecnologías propuestas, pendientes de instalación y aprobación expresa del propietario. No tratarlas como dependencias disponibles ni instalarlas sin autorización.
 
 ## 2. Arquitectura
 
 Utilizar un monolito modular con separación de responsabilidades:
 
-| Ruta | Responsabilidad |
-| --- | --- |
-| `src/app` | Páginas, rutas y controladores HTTP. |
-| `src/components` | Componentes visuales reutilizables. |
-| `src/services` | Lógica y reglas del negocio. |
-| `src/repositories` | Acceso a datos. |
-| `src/schemas` | Validación de entradas. |
-| `src/db` | Modelos y esquemas de base de datos. |
-| `src/types` | Tipos e interfaces compartidos. |
-| `src/lib` | Infraestructura y servicios compartidos. |
-| `src/config` | Configuración de la aplicación. |
-| `src/utils` | Funciones auxiliares. |
+| Ruta               | Responsabilidad                          |
+| ------------------ | ---------------------------------------- |
+| `src/app`          | Páginas, rutas y controladores HTTP.     |
+| `src/components`   | Componentes visuales reutilizables.      |
+| `src/services`     | Lógica y reglas del negocio.             |
+| `src/repositories` | Acceso a datos.                          |
+| `src/schemas`      | Validación de entradas.                  |
+| `src/db`           | Modelos y esquemas de base de datos.     |
+| `src/types`        | Tipos e interfaces compartidos.          |
+| `src/lib`          | Infraestructura y servicios compartidos. |
+| `src/config`       | Configuración de la aplicación.          |
+| `src/utils`        | Funciones auxiliares.                    |
 
 - Evitar la complejidad innecesaria y crear estas carpetas progresivamente según necesidades reales del proyecto.
 - Mantener los controladores HTTP centrados en recibir solicitudes, validar entradas, invocar la lógica del negocio y devolver respuestas.
@@ -67,6 +68,7 @@ Utilizar un monolito modular con separación de responsabilidades:
 ## 5. Calidad del código
 
 - Utilizar TypeScript estricto y conservar `strict: true`.
+- Respetar la configuración de formato existente de Prettier en todas las modificaciones de código.
 - Evitar `any` injustificado.
 - Aplicar responsabilidad única, DRY, KISS y YAGNI.
 - Utilizar nombres descriptivos y evitar duplicación innecesaria.
